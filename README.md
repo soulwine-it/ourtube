@@ -23,3 +23,4 @@ npm install cookie-parser(cookie에 유저 정보 저장)
 
 description  
 babelrc: 우리가 원하는 node.js와 js관련된 필요한 것들을 모두 넣을 것입니다.
+Pug : Pug는 express에서 View를 다루는 방식 중 하나
