@@ -9,9 +9,9 @@ import {
 
 const userRouter = express.Router();
 
-userRouter.get(routes.users, users);
-userRouter.get(routes.userDetail, userDeatil);
+//순서 중요 editProfile이 밑으로 내려가면 :id가 edit를 id로 인식해서 안됨.
 userRouter.get(routes.editProfile, editProfile);
 userRouter.get(routes.changePassword, changePassword);
+userRouter.get(routes.userDetail, userDeatil);
 
 export default userRouter

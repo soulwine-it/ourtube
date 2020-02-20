@@ -11,12 +11,12 @@ export const logout = (req, res) => res.render("Logout", {
 export const users = (req, res) => res.render("Users", {
     pageTitle: "Users"
 });
-export const userDeatil = (req, res) => res.render("user Detail", {
+export const userDeatil = (req, res) => res.render("userDetail", {
     pageTitle: "User Detail"
 });
-export const editProfile = (req, res) => res.render("edit Profile", {
+export const editProfile = (req, res) => res.render("editProfile", {
     pageTitle: "Edit Profile"
 });
-export const changePassword = (req, res) => res.render("change Password", {
+export const changePassword = (req, res) => res.render("changePassword", {
     pageTitle: "Change Password"
 });
