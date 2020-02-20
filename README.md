@@ -7,7 +7,7 @@ node_modules
 package-lock.json
 
 using site:  
-Babel : https://babeljs.io/ 최신의 Javascript 코드를 예전의 Javascript코드로 변환해줌
+Babel : https://babeljs.io/ (최신의 Javascript 코드를 예전의 Javascript코드로 변환해줌)
 
 install:
 node js
