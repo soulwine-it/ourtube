@@ -3,33 +3,31 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-// 디폴트 값이 아닐때는 아래와 같이 표현
-import {
-  userRouter
-} from "./router";
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoRouter";
+import globalRouter from "./routers/globalRouter";
+// // 디폴트 값이 아닐때는 아래와 같이 표현
+// import {
+//   userRouter
+// } from "./routers/userRouter";
 
 const app = express();
-const handleHome = (req, res) => res.send("Hello from my ass");
-const betweenHome = (req, res, next) => {
-  console.log("Between");
-  next();
-};
-const handleProfile = (req, res) => {
-  res.send("You are on my profile");
-};
+
 app.use(cookieParser());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
 app.use(helmet());
 app.use(morgan("dev"));
-app.get("/", handleHome);
-app.get("/profile", handleProfile);
 
+app.use("/", globalRouter);
 app.use("/user", userRouter);
-export default app;
+app.use("/video", videoRouter);
 
+export default app;
 
 // import express from "express";
 // import morgan from "morgan";
