@@ -3,7 +3,7 @@ export const videos = [{
         title: 'Love',
         description: 'man always remember before old romance over',
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id: 1234,
             name: "seonhyo",
@@ -16,7 +16,7 @@ export const videos = [{
         title: 'superman',
         description: 'He is powerful.',
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id: 1234,
             name: "seonhyo",
@@ -29,7 +29,7 @@ export const videos = [{
         title: 'coffee',
         description: 'The coffee has cafein',
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id: 1234,
             name: "seonhyo",
@@ -42,7 +42,7 @@ export const videos = [{
         title: 'shadow',
         description: 'He is black',
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id: 1234,
             name: "seonhyo",
