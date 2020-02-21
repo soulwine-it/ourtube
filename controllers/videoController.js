@@ -1,7 +1,3 @@
-import {
-    videos
-} from "../db.js";
-
 import routes from "../routes.js";
 
 

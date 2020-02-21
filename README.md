@@ -26,12 +26,14 @@ npm install pug
 install: Database  
 MONgo db설치
 npm install mongoose
+npm install dotenv
 
 description
 cookieParser : cookie를 전달 받아서 사용할 수 있도록 함 ex)사용자 인증같은 곳에서 쿠키 검사할때 사용  
 babelrc: 우리가 원하는 node.js와 js관련된 필요한 것들을 모두 넣을 것입니다.  
 Pug : Pug는 express에서 View를 다루는 방식 중 하나(view engin)(http://expressjs.com/en/4x/api.html#app.set);
-MONGoose: Database와 연결해주는 것
+MONGoose: Database와 연결해주는 것  
+dotenv : 뭔가를 숨기려고 할 때
 
 using site:  
 status code Http: https://developer.mozilla.org/ko/docs/Web/HTTP/Status
