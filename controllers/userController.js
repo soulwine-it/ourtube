@@ -1,6 +1,35 @@
-export const join = (req, res) => res.render("Join", {
-    pageTitle: "Videos"
-});
+import routes from "../routes";
+
+export const getJoin = (req, res) => {
+    res.render("join", {
+        pageTitle: "Join"
+    })
+};
+export const postJoin = (req, res) => {
+    const {
+        body: {
+            name,
+            email,
+            password,
+            password2
+        }
+    } = req;
+    //비밀번호 확인
+    if (password != password2) {
+        //비밀번호가 다르다면 400코드 반환()
+        res.status(400);
+        res.render("join", {
+            pageTitle: "Join"
+        });
+
+    } else {
+        // To Do: Register User
+        // To Do: Log user in
+        res.redirect(routes.home);
+    }
+};
+
+
 export const login = (req, res) => res.render("Login", {
     pageTitle: "Login"
 });

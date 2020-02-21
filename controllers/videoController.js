@@ -19,10 +19,10 @@ export const search = (req, res) => {
         }
     } = req;
 
-    console.log(req.query.term);
     res.render("search", {
         pageTitle: "Search",
-        searchingBy: searchingBy
+        searchingBy: searchingBy,
+        videos
     });
 };
 
