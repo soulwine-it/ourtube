@@ -6,8 +6,8 @@ import {
 } from "../controllers/videoController";
 import {
     getJoin,
-    postJoin,
     getLogin,
+    postJoin,
     postLogin,
     logout
 } from "../controllers/userController";
