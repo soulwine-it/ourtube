@@ -6,19 +6,22 @@ import {
 } from "../controllers/videoController";
 import {
     getJoin,
-    login,
-    logout,
-    postJoin
+    postJoin,
+    getLogin,
+    postLogin,
+    logout
 } from "../controllers/userController";
 
 const globalRouter = express.Router();
 
+//회원가입
 globalRouter.get(routes.join, getJoin)
 globalRouter.post(routes.join, postJoin)
-
+//LogIn
+globalRouter.get(routes.login, getLogin)
+globalRouter.post(routes.login, postLogin)
 
 globalRouter.get(routes.home, home)
-globalRouter.get(routes.login, login)
 globalRouter.get(routes.logout, logout)
 globalRouter.get(routes.search, search)
 
