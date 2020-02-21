@@ -1,8 +1,9 @@
 //실제 Mongo DB 연결
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-
-mongoose.connect("mongodb://127.0.0.1:27017/ourtube", {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useFindAndModify: false
 });
