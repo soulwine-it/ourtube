@@ -1,13 +1,23 @@
 import routes from "../routes.js";
+//element를 받는 통로
+import Video from "../models/Video";
 
 
-export const home = (req, res) => {
-    res.render("home", {
-
-        pageTitle: "Home",
-        videos
-
-    });
+export const home = async (req, res) => {
+    try {
+        //await: 해당 과정이 끝날때까지 기다리게 하는 것 async랑 같이 쓰임
+        const videos = await Video.find({});
+        res.render("home", {
+            pageTitle: "Home",
+            videos
+        });
+    } catch (error) {
+        console.log(error);
+        res.render("home", {
+            pageTitle: "Home",
+            videos: []
+        });
+    }
 };
 export const search = (req, res) => {
     //es6 (req.query.term)
