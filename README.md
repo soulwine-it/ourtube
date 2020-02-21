@@ -11,6 +11,7 @@ Babel : https://babeljs.io/ (최신의 Javascript 코드를 예전의 Javascript
 
 install:
 node js
+npm init
 npm install express (in terminal)  
 npm install @babel/node (in terminal)  
 npm install @babel/preset-env (in terminal)  

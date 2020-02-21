@@ -1,7 +1,16 @@
-export const home = (req, res) => res.render("home", {
+import {
+    videos
+}
+from "../db.js"
 
-    pageTitle: "Home"
-});
+export const home = (req, res) => {
+    res.render("home", {
+
+        pageTitle: "Home",
+        videos
+
+    });
+};
 export const search = (req, res) => {
     //es6 (req.query.term)
     const {
@@ -17,23 +26,20 @@ export const search = (req, res) => {
     });
 };
 
-export const videos = (req, res) => res.render("Videos", {
 
-    pageTitle: "videos"
+export const upload = (req, res) => res.render("upload", {
+
+    pageTitle: "Upload"
 });
-export const upload = (req, res) => res.render("Upload", {
+export const videoDetail = (req, res) => res.render("videoDetail", {
 
-    pageTitle: "upload"
+    pageTitle: "VideoDetail"
 });
-export const videoDetail = (req, res) => res.render("Video Detail", {
+export const editVideo = (req, res) => res.render("editVideo", {
 
-    pageTitle: "videoDetail"
+    pageTitle: "EditVideo"
 });
-export const editVideo = (req, res) => res.render("Edit Video", {
+export const deleteVideo = (req, res) => res.render("deleteVideo", {
 
-    pageTitle: "editVideo"
-});
-export const deleteVideo = (req, res) => res.render("Delete Video", {
-
-    pageTitle: "deleteVideo"
+    pageTitle: "DeleteVideo"
 });
